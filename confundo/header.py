@@ -17,7 +17,7 @@ import struct
 class Header:
     '''Abstraction to handle Confundo header'''
 
-    def __init__(self, seqNum=0, ackNum=0, connId=0, isAck=False, isSyn=False, isFin=False):
+    def __init__(self, seqNum, ackNum, connId, isAck, isSyn, isFin):
         self.seqNum = seqNum
         self.ackNum = ackNum
         self.connId = connId
